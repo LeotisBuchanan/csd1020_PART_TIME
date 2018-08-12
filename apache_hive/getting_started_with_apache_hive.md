@@ -63,8 +63,15 @@ You now have a file 20180806114500.export.CSV
    ```bash
    >>  hdfs dfs -mkdir -p 32833939/gdelt/events
    ```
+   Rename the file by running the following command:
+
+   ```bash
+   >>  mv 20180806114500.export.CSV 20180806114500.export.csv
+   ```
 
 2. You can now copy the event files you downloaded earlier to the hdfs directory you just created by running the following command 
+
+
 
    ```sql
    >> hdfs dfs -put *.csv 32833939/gdelt/events/
